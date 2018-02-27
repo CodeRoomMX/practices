@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Position Exercises</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto');
+    * {
+     margin: 0;
+     padding: 0; 
+    }
+    body{
+      font-family: 'Roboto', sans-serif;
+      background-color: #B7FF6F;
+    }
+    section{
+      background-color: #86E765;
+      width: 70%;
+      height: 400px;
+      margin: 0 auto 10px;
+      padding: 20px;
+      position: relative;
+    }
+    img{
+      position: absolute;
+      bottom: 0;
+      right:0;
+      height: 100%;
+    }
+    header{
+      width: 70%;
+      margin: 0 auto;
+      background-color: #65E785;
+      height: 30px;
+      padding: 10px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header nav ul {
+      list-style-type: none;
+    }
+    header nav ul li {
+      display: inline-block;
+    }
+    header nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 25px;
+    }
+    footer {
+      height: 30px;
+      padding: 10px;
+      background-color: #65E785;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    #section-principal{
+      background-color: #650585;
+    }
+    .section-secondary{
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Gato 1</a></li>
+        <li><a href="#">Gato 2</a></li>
+        <li><a href="#">Gato 3</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="section-principal">
+    <div>
+      <h1 class="section-secondary">Un titulo</h1>
+      <p class="section-secondary">Algo de contenido, algo de contenido algo de contenido algo de contenido algo de contenido algo de contenido algo de contenido algo de contenido.</p>
+    </div>
+    <img src="https://www.cryptokitties.co/images/landing-kitty01.svg" />
+  </section>
+  <section>
+    <div class="section-secondary">
+      <h1>Un titulo</h1>
+      <p>Algo de contenido, algo de contenido algo de contenido algo de contenido algo de contenido algo de contenido algo de contenido algo de contenido.</p>
+    </div>
+    <img src="https://www.cryptokitties.co/images/landing-kitty01.svg" />
+  </section>
+  <section>
+    <div>
+      <h1>Un titulo</h1>
+      <p>Algo de contenido, algo de contenido algo de contenido algo de contenido algo de contenido algo de contenido algo de contenido algo de contenido.</p>
+    </div>
+    <img src="https://www.cryptokitties.co/images/landing-kitty01.svg" />
+  </section>
+  <section>
+    <div>
+      <h1>Un titulo</h1>
+      <p>Algo de contenido, algo de contenido algo de contenido algo de contenido algo de contenido algo de contenido algo de contenido algo de contenido.</p>
+    </div>
+    <img src="https://www.cryptokitties.co/images/landing-kitty01.svg" />
+  </section>
+  <footer>
+    <p>Hecho con amor por Coderoom © 2018</p>
+  </footer>
+</body>
+</html>
