@@ -51,3 +51,35 @@ console.log("¿Puedo salir?", limpiarCuarto && tieneDinero);
 limpiarCuarto = true;
 tieneDinero = true;
 console.log("¿Puedo salir?", limpiarCuarto && tieneDinero);
+
+var lista = [
+  [1, 'Jabón'],
+  [2, 'Papas'],
+  [3, 'kg de guayaba'],
+  [1, 'Escoba'],
+  [2, 'Llantas'],
+  [3, 'kg de mango']
+];
+
+console.log('Descripción del segundo item de la lista', lista[1][1]);
+console.log('Kilos de guayaba', lista[2][0]);
+console.log('Cantidad de escobas', lista[3][0]);
+console.log('Cantidad de llantas', lista[4][0]);
+console.log('Cantidad del último item de la lista', lista[lista.length - 1][0]);
+
+for(var i = 1; i <= 10; i++){
+  console.log(i);
+}
+
+
+for(var i = 0; i <= lista.length - 1; i++){
+  console.log(lista[i][0]+" x "+lista[i][1]);
+}
+
+for(var i = 0; i <= lista.length - 1; i++){
+  if(lista[i][0] >= 2){
+    console.log('Vende', lista[i][1]);
+  }else{
+    console.log('Compra', lista[i][1]);
+  }
+}
